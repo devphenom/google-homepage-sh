@@ -64,13 +64,13 @@ export default function Main() {
             </button>
           </div>
         </form>
-        <p>
+        <div className="links">
           Google offered in{" "}
           <a href="https://www.google.com/search?q=deutsch">Deutsch</a>,{" "}
           <a href="https://www.google.com/search?q=italino">Italino</a>,{" "}
           <a href="https://www.google.com/search?q=francais">Francais</a>,{" "}
           <a href="https://www.google.com/search?q=rumantsch">Rumantsch</a>,{" "}
-        </p>
+        </div>
       </div>
     </section>
   );

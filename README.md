@@ -5,4 +5,4 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ## Available Scripts
 
 This app is deployed on .\
-Open [Netlify](https://dp-bluecube-dashboard.netlify.app/) to view it in the browser.
+Open [Netlify](https://google-team-jon-snow.netlify.app/) to view it in the browser.

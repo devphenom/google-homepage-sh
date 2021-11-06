@@ -1,6 +1,5 @@
 // libraries
 import React, { useState } from "react";
-import { useHistory } from "react-router-dom";
 import SearchIcon from "@material-ui/icons/Search";
 import MicIcon from "@material-ui/icons/Mic";
 

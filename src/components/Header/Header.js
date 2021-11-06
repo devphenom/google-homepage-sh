@@ -1,30 +1,42 @@
 import React from "react";
-
+import { Link } from "react-router-dom";
 // icons
-
+import MenuIcon from "@material-ui/icons/Menu";
+import AccountCircleIcon from "@material-ui/icons/AccountCircle";
 // styles
 import "./Header.scss";
 
 const Header = () => {
-  return <section>
-  <div class="header">
-      <div class="left">
-      <nav>
+  return (
+    <header>
+      <div className="left">
+        <nav>
           <ul>
-              <li><div class="icon1"><a href="#"><i class="fa fa-bars"></i></a></div></li>
-              <li><a  href="#" class="link">ALL</a></li>
-              <li><a  href="#" class="link">IMAGES</a></li>
+            <li>
+              <div className="icon1">
+                <MenuIcon />
+              </div>
+            </li>
+            <li>
+              <Link to="#" className="link">
+                ALL
+              </Link>
+            </li>
+            <li>
+              <Link to="#" className="link">
+                IMAGES
+              </Link>
+            </li>
           </ul>
-      </nav>
+        </nav>
       </div>
-      <div class="right">
-          <div class="icon"><i class="fa fa-th"></i></div>
-          <div class="image-div">
-              <img class="image" src="../intern/image-irene.jpg">
-          </div>
+      <div className="right">
+        <div className="icon">
+          <AccountCircleIcon />
+        </div>
       </div>
-  </div>
-</section>;
+    </header>
+  );
 };
 
 export default Header;

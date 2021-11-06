@@ -7,6 +7,11 @@
     align-items: center;
     justify-content: center;
 
+    .logo{
+      width: 300px;
+      text-align: center
+    }
+
     .searchField {
       display: flex;
       justify-content: space-between;

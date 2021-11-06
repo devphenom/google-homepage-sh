@@ -1,5 +1,5 @@
 // libraries
-import React from "react";
+import React, { useState } from "react";
 import SearchIcon from "@material-ui/icons/Search";
 import MicIcon from "@material-ui/icons/Mic";
 
@@ -11,15 +11,24 @@ import "./Main.scss";
 export default function Main() {
   const classes = useStyles();
 
+  const [txt, setTxt] = useState(null)
+
+
+  function renderUserText(val) {
+    setTxt(val.target.value)
+  }
+
   return (
     <section id="main">
       <div className="row">
-        <div>
-          <img src="../" alt="" />
+        <div logo>
+          {
+            txt ? <h1>{txt}</h1> : <img src="../logo1.png" alt="logo" className="logo" />
+          }
         </div>
         <div className="searchField">
           <SearchIcon className={classes.searchBar} />
-          <input type="text" />
+          <input type="text" onChange={renderUserText} />
           <MicIcon color="primary" />
         </div>
         <div className="buttons">
@@ -36,4 +45,9 @@ export default function Main() {
       </div>
     </section>
   );
+
+
 }
+
+
+

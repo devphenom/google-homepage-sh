@@ -1,7 +1,7 @@
 #main {
   font-size: 1.2rem;
   .row {
-    min-height: 80vh;
+    // min-height: 80vh;
     display: flex;
     flex-flow: column wrap;
     align-items: center;
@@ -83,6 +83,7 @@
     }
     .links {
       padding: 10px;
+      font-size: 0.9rem;
     }
   }
 }
